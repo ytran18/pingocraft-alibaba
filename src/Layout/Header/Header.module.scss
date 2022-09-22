@@ -1,3 +1,26 @@
+
+// mobile 
+@media screen and (max-width:740)
+{
+    .menu-items 
+    {
+        display: none;
+    }
+}
+
+// tablet
+@media screen and (min-width: 741) and (max-width: 1024) {
+    
+}
+
+// desktop
+@media screen and (min-width: 1024)
+{
+
+}
+
+
+
 .container
 {
     display: flex;
@@ -38,24 +61,36 @@
 
 // menu
 
-.menu
+.menu 
+{
+    background: rgb(249, 229, 231);
+}
+
+.wrapper
 {
     max-height: 44px;
     display: flex;
     justify-content: space-between;
-    background: rgb(249, 229, 231);
+    align-items: center;
+    margin: 0 2.5rem;
 }
 
-.menubar  > nav
+.menubar 
 {
+    display: flex;
     justify-content: center;
     align-items: center;
     height: 44px;
 }
 
-.menubar > ul 
+.menubar > div 
 {
     height: 44px;
+}
+
+.subnav
+{
+    cursor: pointer;
 }
 
 .menu-items
@@ -65,15 +100,44 @@
     padding: 0 15px;
     color: white;
     font-weight: bold;
-    position: relative;
 }
 
 
-.menu-items:hover
+.subnav:hover
 {
     background: rgb(230, 210, 211);
-    padding: 11px 15px;
-    cursor: pointer;
+}
+
+// sub menu
+
+
+.products-submenu
+{
+    // display: none;
+    position: absolute;
+}
+
+.subnav:hover .sub-menu-products
+{
+    display: block;
+}
+
+.sub-menu-products
+{
+    z-index: 1;
+    width: 100%;
+    display: none;
+    background: rgb(230, 210, 211);
+}
+
+.sub-menu-items
+{
+    font-size: 15px;
+    padding: 0 15px;
+    // color: white;
+    font-weight: bold;
+    list-style: none;
+    position: relative;
 }
 
 
@@ -83,4 +147,42 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 214px;
+    height: 28px;
+    border: 1px solid rgb(196, 198, 207);
+    background: white;
+    border-bottom-left-radius: 100px;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    border-top-right-radius: 100px ;
+}
+
+.search-box
+{
+    border: none;
+    background: transparent;
+    width: 181px;
+    height: 28px;
+    margin-left: 0.75rem;
+}
+
+.search-box::placeholder
+{
+    font-family: 'Roboto', sans-serif;
+    color: rgb(196, 198, 207);
+    font-size: 15px;
+}
+
+.find-icon
+{
+    width: 33px;
+    height: 28px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.find-fontawesome
+{
+    // border: 1px solid;
 }

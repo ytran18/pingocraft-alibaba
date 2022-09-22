@@ -1,5 +1,8 @@
 import classnames from 'classnames/bind'
 import styles from './Header.module.scss'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
+
 import SkypopcardIcon from '../../assets/icon/skypopcardlogo.png'
 
 const cx = classnames.bind(styles)
@@ -19,18 +22,42 @@ function Header ()
                 </div>
             </div>
             <div className={cx('menu')}>
-                <nav className={cx('menubar')}>
-                    <ul>
-                        <li className={cx('menu-items')}>Home</li>
-                        <li className={cx('menu-items')}>Products</li>
-                        <li className={cx('menu-items')}>Profile</li>
-                        <li className={cx('menu-items')}>Contacts</li>
-                        <li className={cx('menu-items')}>Feed</li>
-                        <li className={cx('menu-items')}>View more</li>
-                    </ul>
-                </nav>
-                <div className={cx('search')}>
-                    <input type={'text'} placeholder='Search in this store' className={cx('search-box')}/>
+                <div className={cx('wrapper')}>
+                    <nav className={cx('menubar')}>
+                        {/* <ul> */}
+                            <div>
+                                <li className={cx('menu-items')} >Home</li>
+                            </div>
+                            <div className={cx('subnav')}>
+                                <li className={cx('menu-items')}>Products</li>
+                                <div className={cx('products-submenu')}>
+                                    <div className={cx('sub-menu-products')}>
+                                        <li className={cx('sub-menu-items')}>See all categories</li>
+                                        <li className={cx('sub-menu-items')}>3D Pop up Card</li>
+                                    </div >
+                                </div>
+                            </div>
+                            <div>
+                                <li className={cx('menu-items')}>Profile</li>
+                            </div>
+                            <div>
+                                <li className={cx('menu-items')}>Contacts</li>
+                            </div>
+                            <div>
+                                <li className={cx('menu-items')}>Feed</li>
+                            </div>
+                            <div>
+                                <li className={cx('menu-items')}>View more</li>
+                            </div>
+                        {/* </ul> */}
+                    </nav>
+                    
+                    <div className={cx('search')}>
+                        <input type={'text'} placeholder='Search in this store' className={cx('search-box')}/>
+                        <div className={cx('find-icon')}>
+                            <FontAwesomeIcon  icon={faMagnifyingGlass} className={cx('find-fontawesome')}/>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
