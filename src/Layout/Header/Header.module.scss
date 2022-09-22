@@ -1,0 +1,86 @@
+.container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-height: 256px;
+}
+
+.header_top
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skypopcard
+{
+    width: 200px;
+    height: 200px;
+}
+
+.info
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.headline
+{
+    text-transform: uppercase;
+    font-size: 2.5rem;
+}
+
+.detail
+{
+    font-size: 1rem;
+}
+
+// menu
+
+.menu
+{
+    max-height: 44px;
+    display: flex;
+    justify-content: space-between;
+    background: rgb(249, 229, 231);
+}
+
+.menubar  > nav
+{
+    justify-content: center;
+    align-items: center;
+    height: 44px;
+}
+
+.menubar > ul 
+{
+    height: 44px;
+}
+
+.menu-items
+{
+    display:inline-block;
+    font-size: 15px;
+    padding: 0 15px;
+    color: white;
+    font-weight: bold;
+    position: relative;
+}
+
+
+.menu-items:hover
+{
+    background: rgb(230, 210, 211);
+    padding: 11px 15px;
+    cursor: pointer;
+}
+
+
+.search
+{
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

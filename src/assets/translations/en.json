@@ -1,0 +1,31 @@
+{
+    "headermenu.home":"Home",
+    "headermenu.products":"Products",
+    "headermenu.products.seeallCatagories":"See all categories",
+    "headermenu.products.3dpopup":"3D Pop up Card",
+    "headermenu.profile":"Profile",
+    "headermenu.profile.overview":"Company Overview",
+    "headermenu.profile.capability":"Company Capability",
+    "headermenu.profile.capability.trade":"Trade Capability",
+    "headermenu.profile.capability.production":"Production Capability",
+    "headermenu.profile.capability.r&d":"R&D Capability",
+    "headermenu.profile.performance":"Business Performance",
+    "headermenu.profile.performance.buyer":"Buyer Interactions",
+    "headermenu.profile.performance.ratings":"Ratings and review",
+    "headermenu.contacts":"Contacts",
+    "headermenu.feed":"Feed",
+    "headermenu.viewmore":"View more",
+    
+    "headermenu.search.placeholder":"Search in this store",
+
+    "content.aboutus.headline":"About Us",
+    "content.aboutus.main1":"Skypopcards Vietnam is a famous handmade greeting card and manufacturer in Vietnam. With the big desire of bringing things in real life into each paper artwork, Skypopcard's creative team always gives customers the most unique and sophisticated products. It's made with all their heart and effort.",
+    "content.aboutus.main2":"Skypopcards's cards appear on almost all poplular special occasions in your daily life, such as New Year, Valentine, Christmas, Birthday, Thank You, Mother's Day, Father's Day, Wedding and Congratulations, Skypopcards make your life much more colorful because it includes every magical thing in each pop-up model. So, we hope you enjoy your day in the most beautiful and meaningful way.",
+    "content.aboutus.main3":"Skypopcards can customize your own gift cards by professionally printing/laser-cutting your company name, logo or message inside and even printing your address and information on the envelop flap.",
+
+    "content.mainproduct.headeline":"MAIN PRODUCTS",
+    "content.mainproduct.customdesign":"CUSTOM DESIGN POP CARD",
+    "content.mainproduct.decor":"DECOR POP ORNAMENT",
+    "content.mainproduct.flower":"FLOWER POP POT",
+    "content.mainproduct.popup":"POP UP CARD"
+}
