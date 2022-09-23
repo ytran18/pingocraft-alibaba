@@ -1,7 +1,7 @@
 import classnames from 'classnames/bind'
 import styles from './Header.module.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
+import { faMagnifyingGlass, faBars } from '@fortawesome/free-solid-svg-icons'
 
 import SkypopcardIcon from '../../assets/icon/skypopcardlogo.png'
 
@@ -9,6 +9,7 @@ const cx = classnames.bind(styles)
 
 function Header ()
 {
+
     return (
         <div className={cx('container')}>
             <div className={cx('header_top')}>
@@ -19,6 +20,9 @@ function Header ()
                     <h1 className={cx('headline')}>viet nam pingo craft company ltd</h1>
                     <h2 className={cx('detail')}>Address: 176/4/8 TX25 Street, Thanh Xuan Ward, District 12th, Ho Chi Minh City, Vietnam</h2>
                     <h2 className={cx('detail')}>Hotline: (+84) 765 126 901 | Email: skypopcards@gmail.com | website: skypopcards.com</h2>
+                </div>
+                <div className={cx('menu-icon')}>
+                    <FontAwesomeIcon icon={faBars}/>
                 </div>
             </div>
             <div className={cx('menu')}>
