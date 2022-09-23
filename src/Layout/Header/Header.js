@@ -24,32 +24,72 @@ function Header ()
             <div className={cx('menu')}>
                 <div className={cx('wrapper')}>
                     <nav className={cx('menubar')}>
-                        {/* <ul> */}
-                            <div>
+                            <div className={cx('main-menu')}>
                                 <li className={cx('menu-items')} >Home</li>
                             </div>
-                            <div className={cx('subnav')}>
+                            <div className={cx('main-menu')}>
                                 <li className={cx('menu-items')}>Products</li>
                                 <div className={cx('products-submenu')}>
                                     <div className={cx('sub-menu-products')}>
-                                        <li className={cx('sub-menu-items')}>See all categories</li>
-                                        <li className={cx('sub-menu-items')}>3D Pop up Card</li>
+                                        <div className={cx('main-submenu')}>
+                                            <li className={cx('sub-menu-items')}>See all categories</li>
+                                        </div>
+                                        <div className={cx('main-submenu')}>
+                                            <li className={cx('sub-menu-items')}>3D Pop up Card</li>
+                                            <div className={cx('secondsub-layer')}>
+                                                <div className={cx('secondsub-menu')}>
+                                                    <li className={cx('secondsub-menu-items')}>Birthday Pop up Card</li>
+                                                    <li className={cx('secondsub-menu-items')}>Wedding Pop up Card</li>
+                                                    <li className={cx('secondsub-menu-items')}>Building Pop up Card</li>
+                                                    <li className={cx('secondsub-menu-items')}>Love Pop up Card</li>
+                                                    <li className={cx('secondsub-menu-items')}>Flower Pop up Card</li>
+                                                    <li className={cx('secondsub-menu-items')}>Anniversary Pop up Card</li>
+                                                    <li className={cx('secondsub-menu-items')}>Chrismass Pop up Card</li>
+                                                    <li className={cx('secondsub-menu-items')}>Animal Pop up Card</li>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div >
                                 </div>
                             </div>
-                            <div>
+                            <div className={cx('main-menu')}>
                                 <li className={cx('menu-items')}>Profile</li>
+                                <div className={cx('products-submenu')}>
+                                    <div className={cx('sub-menu-products')}>
+                                        <div className={cx('main-submenu')}>
+                                            <li className={cx('sub-menu-items')}>Company Overview</li>
+                                        </div>
+                                        <div className={cx('main-submenu')}>
+                                            <li className={cx('sub-menu-items','sub1')}>Company Capability</li>
+                                            <div className={cx('secondsub-layer')}>
+                                                <div className={cx('secondsub-menu')}>
+                                                    <li className={cx('secondsub-menu-items')}>Trade Capacity</li>
+                                                    <li className={cx('secondsub-menu-items')}>Production Capacity</li>
+                                                    <li className={cx('secondsub-menu-items')}>RnD Capacity</li>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className={cx('main-submenu')}>
+                                            <li className={cx('sub-menu-items')}>Business Performance</li>
+                                            <div className={cx('secondsub-layer')}>
+                                                <div className={cx('secondsub-menu')}>
+                                                    <li className={cx('secondsub-menu-items')}>Buyer Interactions</li>
+                                                    <li className={cx('secondsub-menu-items')}>Ratings and Reviews</li>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div >
+                                </div>
                             </div>
-                            <div>
+                            <div className={cx('main-menu')}>
                                 <li className={cx('menu-items')}>Contacts</li>
                             </div>
-                            <div>
+                            <div className={cx('main-menu')}>
                                 <li className={cx('menu-items')}>Feed</li>
                             </div>
-                            <div>
+                            <div  className={cx('main-menu')}>
                                 <li className={cx('menu-items')}>View more</li>
                             </div>
-                        {/* </ul> */}
                     </nav>
                     
                     <div className={cx('search')}>
