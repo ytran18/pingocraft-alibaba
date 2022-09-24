@@ -9,7 +9,7 @@ function DefaultLayout ()
 {
     return (
         <div className={cx('container')}>
-            <div>
+            <div className={cx('header')}>
                 <Header />
             </div>
             <div className={cx('home')}>

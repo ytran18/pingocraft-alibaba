@@ -1,0 +1,142 @@
+.container
+{
+    position: relative;
+}
+
+// flag - language
+
+.slide-show
+{
+    z-index: 2;
+}
+
+.flag-container
+{
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+}
+
+.col
+{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1.5rem;
+}
+
+.flag-language
+{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.flag-language p 
+{
+    font-size: 15px;
+    margin-left: 0.5rem;
+}
+
+.flag
+{
+    width: 45px;
+    height: 45px;
+}
+
+// about us
+
+.about-us
+{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    background-image: url('../..//assets/img/background.jpg') ;
+    background-size: cover;
+    color: rgb(65, 63, 63);
+}
+
+.aboutus-leftside 
+{
+    width: 5%;
+    // border: 1px solid #333;
+}
+
+.aboutus-center
+{
+    width: 35%;
+    // border: 1px solid #333;
+    color: #fff;
+    padding-top: 2rem;
+}
+
+.aboutus-rightside
+{
+    width: 60%;
+    // border: 1px solid #333;
+}
+
+.aboutusImg1
+{
+    background: #fff;
+    width: 460px;
+    height: 320px;
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutusImg1 img
+{
+    width: 450px; 
+}
+
+.aboutusImg2
+{
+    background: #fff;
+    margin-top: 1.5rem;
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 410px;
+    height: 225px;
+}
+
+.aboutusImg2 img 
+{
+    width: 400px;
+}
+
+.headline
+{
+    font-weight: bold;
+    margin-left: 2rem;
+}
+
+.aboutus-rightside p 
+{
+    font-size: 15px;
+    margin: 1rem 5rem 0 2rem;
+    text-align: justify;
+    text-justify: inter-word;
+    font-weight: 500;
+}
+
+.rightside-img div
+{
+    margin-top: 2rem;
+    background: #fff;
+    margin-left: 2rem;
+    width: 610px;
+    height: 315px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rightside-img > div > img
+{
+    width: 600px;
+}
