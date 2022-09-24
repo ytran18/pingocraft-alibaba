@@ -1,8 +1,13 @@
-import React from 'react'
+import classNames from "classnames/bind"
+import styles from './Proflie.module.scss'
+
+const cx = classNames.bind(styles)
 
 function Profile() {
   return (
-    <div>Profile</div>
+    <div className={cx('container')}>
+
+    </div>
   )
 }
 
