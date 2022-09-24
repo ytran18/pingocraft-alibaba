@@ -3,6 +3,8 @@ import styles from './Header.module.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMagnifyingGlass, faBars } from '@fortawesome/free-solid-svg-icons'
 
+import { Link } from 'react-router-dom'
+
 import SkypopcardIcon from '../../assets/icon/skypopcardlogo.png'
 
 const cx = classnames.bind(styles)
@@ -29,10 +31,14 @@ function Header ()
                 <div className={cx('wrapper')}>
                     <nav className={cx('menubar')}>
                             <div className={cx('main-menu')}>
-                                <li className={cx('menu-items')} >Home</li>
+                                <Link to={'/'}>
+                                    <li className={cx('menu-items')} >Home</li>
+                                </Link>
                             </div>
                             <div className={cx('main-menu')}>
-                                <li className={cx('menu-items')}>Products</li>
+                                <Link to={'/products'}>
+                                    <li className={cx('menu-items')}>Products</li>
+                                </Link>
                                 <div className={cx('products-submenu')}>
                                     <div className={cx('sub-menu-products')}>
                                         <div className={cx('main-submenu')}>
