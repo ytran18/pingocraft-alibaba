@@ -63,7 +63,9 @@ function Header ()
                                 </div>
                             </div>
                             <div className={cx('main-menu')}>
-                                <li className={cx('menu-items')}>Profile</li>
+                                <Link to={'/profile'}>
+                                    <li className={cx('menu-items')}>Profile</li>
+                                </Link>
                                 <div className={cx('products-submenu')}>
                                     <div className={cx('sub-menu-products')}>
                                         <div className={cx('main-submenu')}>
@@ -92,13 +94,19 @@ function Header ()
                                 </div>
                             </div>
                             <div className={cx('main-menu')}>
-                                <li className={cx('menu-items')}>Contacts</li>
+                                <Link to={'/contact'}>
+                                    <li className={cx('menu-items')}>Contacts</li>
+                                </Link>
                             </div>
                             <div className={cx('main-menu')}>
-                                <li className={cx('menu-items')}>Feed</li>
+                                <Link to={'/feed'}>
+                                    <li className={cx('menu-items')}>Feed</li>
+                                </Link>
                             </div>
                             <div  className={cx('main-menu')}>
-                                <li className={cx('menu-items')}>View more</li>
+                                <Link to={'/view-more'}>
+                                    <li className={cx('menu-items')}>View more</li>
+                                </Link>
                             </div>
                     </nav>
                     

@@ -1,6 +1,7 @@
 import classNames from "classnames/bind"
 import styles from './Products.module.scss'
 import Header from '../../Layout/Header/Header'
+import Footer from '../../Layout/Footer/Footer'
 
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faShop, faAngleDown, faAngleUp} from '@fortawesome/free-solid-svg-icons'
@@ -57,6 +58,10 @@ function Products() {
                 <div className={cx('main-content')}>
 
                 </div>
+            </div>
+
+            <div className={cx('footer')}>
+                <Footer />
             </div>
         </div>
     )
