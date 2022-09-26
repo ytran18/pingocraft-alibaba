@@ -161,3 +161,11 @@
 {
     width: 50%;
 }
+
+.products-navigation div 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}

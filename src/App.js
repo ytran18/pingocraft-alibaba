@@ -8,7 +8,6 @@ import { publicRoutes } from './routes/route'
 function App() {
     return (
         <BrowserRouter>
-            
                 <Routes>
                     {publicRoutes.map((route, index) => {
                         let Layout = DefaultLayout

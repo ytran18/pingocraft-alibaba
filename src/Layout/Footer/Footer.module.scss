@@ -1,0 +1,83 @@
+.container
+{
+    width: 100%;
+    display: flex;
+    background: rgb(224, 224, 224);
+    padding:3rem 0;
+}
+
+.left
+{
+    width: 33%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.left > img
+{
+    width: 150px;
+    height: 150px;
+}
+
+// 
+
+.center
+{
+    width: 33%;
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.center p
+{
+    margin: 1rem 0;
+    cursor: pointer;
+}
+
+.center h5 
+{
+    margin: 1rem 0;
+    font-size: 15px;
+}
+
+
+// 
+
+.right
+{
+    width: 33%;
+}
+
+.right h5 
+{
+    font-size: 15px;
+    margin: 1rem 0;
+}
+
+.wrapper-info 
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper-info div 
+{
+    display: flex;
+    font-size: 13px;
+    margin: 1rem 0;
+}
+
+.wrapper p 
+{
+    margin-left: 1rem;
+}
+
+.info-icon
+{
+    width: 16px;
+    height: 16px;
+}

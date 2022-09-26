@@ -7,7 +7,7 @@ const cx = classNames.bind(styles)
 function Feed() {
   return (
       <div className={cx('container')}>
-        
+
       </div>
   )
 }

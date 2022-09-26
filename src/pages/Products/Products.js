@@ -3,7 +3,7 @@ import styles from './Products.module.scss'
 import Header from '../../Layout/Header/Header'
 
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faShop} from '@fortawesome/free-solid-svg-icons'
+import {faShop, faAngleDown, faAngleUp} from '@fortawesome/free-solid-svg-icons'
 
 const cx = classNames.bind(styles)
 
@@ -46,10 +46,10 @@ function Products() {
                         </div>
                         <div className={cx('products-navigation')}>
                             <div className={cx('left')}>
-
+                                <FontAwesomeIcon icon={faAngleDown}/>
                             </div>
-                            <div className={cx('right')}>
-
+                            <div className={cx('right')}>   
+                                <FontAwesomeIcon icon={faAngleUp}/>
                             </div>
                         </div>
                     </div>
