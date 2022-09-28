@@ -3,6 +3,11 @@ import styles from './Home.module.scss'
 
 import {Box, Carousel, Image} from 'grommet'
 
+// translate
+import { withNamespaces } from 'react-i18next'
+import i18n from '../../i18n'
+
+
 import slideImg1 from '../../assets/slider/slider1.jpeg'
 import slideImg2 from '../../assets/slider/slider2.jpeg'
 import slideImg3 from '../../assets/slider/slider3.jpeg'
@@ -27,11 +32,15 @@ import Netherland from '../../assets/flag/netherlands.png'
 import Indonesia from '../../assets/flag/indonesia.png'
 import Jew from '../../assets/flag/israel.png'
 import India from '../../assets/flag/india.png'
-
 const cx = classnames.bind(styles)
 
 function Home() 
 {
+
+    const changeLanguage = (lng) =>
+    {
+        i18n.changeLanguage(lng)
+    }
 
     return (
         <div className={cx('container')}>
@@ -77,7 +86,7 @@ function Home()
                         <p>Español</p>
                     </div>
                     
-                    <div className={cx('flag-language')}>
+                    <div className={cx('flag-language')} onClick={() => changeLanguage('vn')}>
                         <img alt='vietnam' src={Vietnam} className={cx('flag')}/>
                         <p>Tiếng Việt</p>
                     </div>
