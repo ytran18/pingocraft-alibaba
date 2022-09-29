@@ -1,0 +1,42 @@
+.container
+{
+    width: 500px;
+    height: 500px;
+    background: rgb(252, 229, 231);
+    border-radius: 15px;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-around;
+    box-shadow: 7px 7px rgb(126, 120, 120);
+}
+
+.picture
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img
+{
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.headline
+{
+    display: flex;
+    justify-content: space-around;
+    text-transform: uppercase;
+}
+
+.headline > div 
+{
+    background: rgb(255, 255, 255);
+    padding: 0.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    cursor: pointer;
+}

@@ -7,8 +7,7 @@ import { faMagnifyingGlass, faBars } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom'
 
 // translate
-import { useTranslation, withNamespaces } from 'react-i18next'
-import '../../i18n'
+import { useTranslation } from 'react-i18next'
 
 import SkypopcardIcon from '../../assets/icon/skypopcardlogo.png'
 
@@ -19,10 +18,6 @@ function Header ()
 
     const {t, i18n} = useTranslation('translation')
 
-    const changeLanguage = (lng) =>
-    {
-        i18n.changeLanguage(lng)
-    }
 
     return (
         <Suspense fallback="loading">
@@ -124,7 +119,7 @@ function Header ()
                         </nav>
                         
                         <div className={cx('search')}>
-                            <input type={'text'} placeholder='Search in this store' className={cx('search-box')}/>
+                            <input type={'text'} placeholder={t('headermenu.search.placeholder')} className={cx('search-box')}/>
                             <div className={cx('find-icon')}>
                                 <FontAwesomeIcon  icon={faMagnifyingGlass} className={cx('find-fontawesome')}/>
                             </div>

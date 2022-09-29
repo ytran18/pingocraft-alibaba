@@ -1,0 +1,29 @@
+.container
+{
+    margin: 1rem 2rem ;
+}
+
+.factory-headeline
+{
+    background: rgb(251, 229, 231);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.pictures
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+}
+
+.image
+{
+    background: rgb(251, 229, 231);
+    width: 400px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
