@@ -1,0 +1,48 @@
+.container h3 
+{
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.container h4 
+{
+    font-size: 14px;
+    margin-top: 1rem;
+}
+
+.container p 
+{
+    font-size: 13px;
+    margin-top: 1rem;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.album
+{
+    display: flex;
+    margin-top: 1rem;
+}
+
+.image1
+{
+    width: 282px;
+    height: 160px;
+    border-radius: 10px;
+}
+
+.image
+{
+    width: 282px;
+    height: 160px;
+    margin-left: 1rem;
+    border-radius: 10px;
+}
+
+.table
+{
+    margin-top: 1rem;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+}
