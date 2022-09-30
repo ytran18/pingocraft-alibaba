@@ -27,3 +27,33 @@
     align-items: center;
     justify-content: center;
 }
+
+// 
+
+.creative
+{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.creative h1
+{
+    text-align: right;
+    text-transform: uppercase;
+    color: rgb(181, 5, 4);    
+}
+
+.creative-content
+{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 17px;
+}
+
+.creative-content p 
+{
+    width: 17%;
+    text-align: justify;
+    text-justify: inter-word;
+}

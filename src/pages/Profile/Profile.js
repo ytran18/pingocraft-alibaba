@@ -4,6 +4,10 @@ import styles from './Proflie.module.scss'
 import Header from '../../Layout/Header/Header'
 import Footer from '../../Layout/Footer/Footer'
 
+import ProductCapacity from "../../components/Profile/Product-Capacity/ProductCapacity"
+import TradeCapacity from "../../components/Profile/Trade-Capacity/TradeCapacity"
+import BusinessPerformance from "../../components/Profile/Business-Performance/BusinessPerformance"
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBuilding } from '@fortawesome/free-regular-svg-icons'
 import { faArrowUpRightDots, faChartPie, faWrench } from '@fortawesome/free-solid-svg-icons'
@@ -140,6 +144,15 @@ function Profile() {
                                 </Table>
                             </div>
                         </div>
+                    </div>
+                    <div className={cx('product-capacity')}>
+                        <ProductCapacity />
+                    </div>
+                    <div className={cx('trade-capacity')}>
+                        <TradeCapacity />
+                    </div>
+                    <div className={cx('business-performance')}>
+                        <BusinessPerformance />
                     </div>
                 </div>
             </div>

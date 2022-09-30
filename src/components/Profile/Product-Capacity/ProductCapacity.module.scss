@@ -1,0 +1,62 @@
+.container
+{
+    padding: 1rem;
+    background: rgb(255, 255, 255);
+    width: 960px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 8px rgba(0,0,0,.05);
+}
+
+.header
+{
+    height: 51px;
+    border-bottom: 1px solid rgb(219, 219, 219);
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+}
+
+.header p 
+{
+    margin-left: 1rem;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.content h6
+{
+    font-size: 13px;
+    margin: 1rem;
+    font-weight: bold;
+
+}
+
+.image
+{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.image div 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.picture
+{
+    width: 162px;
+    height: 126px;
+    border-radius: 10px;
+}
+
+// 
+
+.table
+{
+    font-size: 14px;
+    margin: 1rem;
+}
