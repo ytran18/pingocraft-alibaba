@@ -47,59 +47,11 @@ function Header ()
                                     <Link to={'/products'}>
                                         <li className={cx('menu-items')}>{t('headermenu.products')}</li>
                                     </Link>
-                                    <div className={cx('products-submenu')}>
-                                        <div className={cx('sub-menu-products')}>
-                                            <div className={cx('main-submenu')}>
-                                                <li className={cx('sub-menu-items')}>{t('headermenu.products.seeallCatagories')}</li>
-                                            </div>
-                                            <div className={cx('main-submenu')}>
-                                                <li className={cx('sub-menu-items')}>{t('headermenu.products.3dpopup')}</li>
-                                                <div className={cx('secondsub-layer')}>
-                                                    <div className={cx('secondsub-menu')}>
-                                                        <li className={cx('secondsub-menu-items')}>Birthday Pop up Card</li>
-                                                        <li className={cx('secondsub-menu-items')}>Wedding Pop up Card</li>
-                                                        <li className={cx('secondsub-menu-items')}>Building Pop up Card</li>
-                                                        <li className={cx('secondsub-menu-items')}>Love Pop up Card</li>
-                                                        <li className={cx('secondsub-menu-items')}>Flower Pop up Card</li>
-                                                        <li className={cx('secondsub-menu-items')}>Anniversary Pop up Card</li>
-                                                        <li className={cx('secondsub-menu-items')}>Chrismass Pop up Card</li>
-                                                        <li className={cx('secondsub-menu-items')}>Animal Pop up Card</li>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div >
-                                    </div>
                                 </div>
                                 <div className={cx('main-menu')}>
                                     <Link to={'/profile'}>
                                         <li className={cx('menu-items')}>{t('headermenu.profile')}</li>
                                     </Link>
-                                    <div className={cx('products-submenu')}>
-                                        <div className={cx('sub-menu-products')}>
-                                            <div className={cx('main-submenu')}>
-                                                <li className={cx('sub-menu-items')}>{t('headermenu.profile.overview')}</li>
-                                            </div>
-                                            <div className={cx('main-submenu')}>
-                                                <li className={cx('sub-menu-items','sub1')}>{t('headermenu.profile.capability')}</li>
-                                                <div className={cx('secondsub-layer')}>
-                                                    <div className={cx('secondsub-menu')}>
-                                                        <li className={cx('secondsub-menu-items')}>{t('headermenu.profile.capability.trade')}</li>
-                                                        <li className={cx('secondsub-menu-items')}>{t('headermenu.profile.capability.production')}</li>
-                                                        <li className={cx('secondsub-menu-items')}>{t('headermenu.profile.capability.r&d')}</li>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className={cx('main-submenu')}>
-                                                <li className={cx('sub-menu-items')}>{t('headermenu.profile.performance')}</li>
-                                                <div className={cx('secondsub-layer')}>
-                                                    <div className={cx('secondsub-menu')}>
-                                                        <li className={cx('secondsub-menu-items')}>{t('headermenu.profile.performance.buyer')}</li>
-                                                        <li className={cx('secondsub-menu-items')}>{t('headermenu.profile.performance.ratings')}</li>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div >
-                                    </div>
                                 </div>
                                 <div className={cx('main-menu')}>
                                     <Link to={'/contact'}>

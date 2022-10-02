@@ -1,0 +1,51 @@
+
+.container
+{
+    position: sticky;
+    position: -webkit-sticky;
+    align-self: flex-end;
+    top: 0;
+}
+
+.sidebar-nav
+{
+    width: 220px;
+    height: 208px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 2px 4px 8px rgba(0,0,0,.05);
+}
+
+.sidebar-nav a 
+{
+    height: 25%;
+    border: 1px dashed rgb(244, 244, 244);
+    cursor: pointer;
+    text-decoration: none;
+    color: #333;
+}
+
+.nav-items
+{
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-items:hover 
+{
+    background: rgb(246, 246, 246);
+}
+
+.nav-items p 
+{
+    margin-left: 1rem;
+    width: 80%;
+    float: left;
+}
+
+.icon 
+{
+    width: 20%;
+    float: right;
+}

@@ -1,0 +1,33 @@
+.container
+{
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+}
+
+.col
+{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1.5rem;
+}
+
+.flag-language
+{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.flag-language p 
+{
+    font-size: 15px;
+    margin-left: 0.5rem;
+}
+
+.flag
+{
+    width: 45px;
+    height: 45px;
+}

@@ -1,0 +1,71 @@
+
+.container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 2rem 0 2rem;
+}
+
+.container h1 
+{
+    text-transform: uppercase;
+}
+
+.container h6 
+{
+    text-transform: uppercase;
+    font-size: 17px;
+    letter-spacing: 5px;
+}
+
+.advantages-top
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.advantages-footer
+{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons-wrapper
+{
+    width: 16%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons-background
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 120px;
+    background: rgb(251, 229, 231);
+    border-radius: 100%;
+    margin: 1rem 2rem;
+}
+
+.advantages-icons
+{
+    width: 52px;
+    height: 52px;
+}
+
+.icons-wrapper p 
+{
+    font-size: 20px;
+    text-align: center;
+}
