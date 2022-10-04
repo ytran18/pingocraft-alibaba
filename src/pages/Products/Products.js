@@ -3,8 +3,8 @@ import styles from './Products.module.scss'
 import Header from '../../Layout/Header/Header'
 import Footer from '../../Layout/Footer/Footer'
 
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faShop, faAngleDown, faAngleUp} from '@fortawesome/free-solid-svg-icons'
+import Sidebar from "../../components/Pages/Product/Sidebar/Sidebar"
+import AllProducts from "../../components/Pages/Product/Products/Products"
 
 const cx = classNames.bind(styles)
 
@@ -17,46 +17,10 @@ function Products() {
 
             <div className={cx('products')}>
                 <div className={cx('sidebar')}>
-                    <div className={cx('sidebar-toppick')}>
-                            <FontAwesomeIcon icon={faShop}  className={cx('shop-icon')}/>
-                            <p>Top picks</p>
-                    </div>
-                    <div className={cx('sidebar-categories')}>
-                        <div className={cx('categories-text')}>
-                            <p>Products Categories</p>
-                        </div>
-                        <div className={cx('categories-info')}>
-                            <p>3D Pop up Card</p>
-                            <div className={cx('catesgories-submenu')}>
-                                <div className={cx('catesgories-menu')}>
-                                    <p className={cx('categories-items')}>Birthday Pop up Card</p>
-                                    <p className={cx('categories-items')}>Wedding Pop up Card</p>
-                                    <p className={cx('categories-items')}>Building Pop up Card</p>
-                                    <p className={cx('categories-items')}>Love Pop up Card</p>
-                                    <p className={cx('categories-items')}>Flower Pop up Card</p>
-                                    <p className={cx('categories-items')}>Anniversary Pop up Card</p>
-                                    <p className={cx('categories-items')}>Chrismass Pop up Card</p>
-                                    <p className={cx('categories-items')}>Animal Pop up Card</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className={cx('sidebar-products')}>
-                        <div className={cx('products-toppick')}>
-
-                        </div>
-                        <div className={cx('products-navigation')}>
-                            <div className={cx('left')}>
-                                <FontAwesomeIcon icon={faAngleDown}/>
-                            </div>
-                            <div className={cx('right')}>   
-                                <FontAwesomeIcon icon={faAngleUp}/>
-                            </div>
-                        </div>
-                    </div>
+                    <Sidebar />
                 </div>
                 <div className={cx('main-content')}>
-
+                    <AllProducts />
                 </div>
             </div>
 

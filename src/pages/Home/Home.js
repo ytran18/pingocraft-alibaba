@@ -5,10 +5,10 @@ import {Box, Carousel, Image} from 'grommet'
 
 
 // components
-import OurInfo from '../../components/Home/OurInfo/OurInfo'
-import Flag from '../../components/Home/Flag-Language/Flag'
-import AboutUs from '../../components/Home/AboutUs/AboutUs'
-import Advantages from '../../components/Home/Advantages/Advantages'
+import OurInfo from '../../components/Pages/Home/OurInfo/OurInfo'
+import Flag from '../../components/Pages/Home/Flag-Language/Flag'
+import AboutUs from '../../components/Pages/Home/AboutUs/AboutUs'
+import Advantages from '../../components/Pages/Home/Advantages/Advantages'
 
 // video
 import VID001 from '../../assets/video/VID001.mp4'

@@ -3,9 +3,9 @@ import styles from './CompanyOverview.module.scss'
 
 import { Table, TableHeader, TableRow, TableCell, TableBody } from 'grommet'
 
-import IMG001 from '../../../assets/products/IMG001.jpeg'
-import IMG002 from '../../../assets/products/IMG002.jpeg'
-import IMG003 from '../../../assets/products/IMG003.jpeg'
+import IMG001 from '../../../../assets/products/IMG001.jpeg'
+import IMG002 from '../../../../assets/products/IMG002.jpeg'
+import IMG003 from '../../../../assets/products/IMG003.jpeg'
 
 const cx = classnames.bind(styles)
 

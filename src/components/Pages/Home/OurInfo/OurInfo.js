@@ -1,14 +1,14 @@
 import classnames from 'classnames/bind'
 import styles from './OurInfo.module.scss'
 
-import IMG001 from '../../../assets/img/IMG008.png'
-import IMG002 from '../../../assets/img/IMG009.png'
-import IMG003 from '../../../assets/img/IMG010.png'
-import IMG004 from '../../../assets/img/IMG011.png'
-import IMG005 from '../../../assets/img/IMG012.png'
-import IMG006 from '../../../assets/img/IMG013.png'
-import IMG007 from '../../../assets/img/IMG014.png'
-import IMG008 from '../../../assets/img/IMG015.png'
+import IMG001 from '../../../../assets/img/IMG008.png'
+import IMG002 from '../../../../assets/img/IMG009.png'
+import IMG003 from '../../../../assets/img/IMG010.png'
+import IMG004 from '../../../../assets/img/IMG011.png'
+import IMG005 from '../../../../assets/img/IMG012.png'
+import IMG006 from '../../../../assets/img/IMG013.png'
+import IMG007 from '../../../../assets/img/IMG014.png'
+import IMG008 from '../../../../assets/img/IMG015.png'
 
 
 const cx = classnames.bind(styles)

@@ -4,11 +4,11 @@ import styles from './Proflie.module.scss'
 import Header from '../../Layout/Header/Header'
 import Footer from '../../Layout/Footer/Footer'
 
-import ProductCapacity from "../../components/Profile/Product-Capacity/ProductCapacity"
-import TradeCapacity from "../../components/Profile/Trade-Capacity/TradeCapacity"
-import BusinessPerformance from "../../components/Profile/Business-Performance/BusinessPerformance"
-import CompanyOverview from "../../components/Profile/Company-Overview/CompanyOverview"
-import Sidebar from "../../components/Profile/Sidebar/Sidebar"
+import ProductCapacity from "../../components/Pages/Profile/Product-Capacity/ProductCapacity"
+import TradeCapacity from "../../components/Pages/Profile/Trade-Capacity/TradeCapacity"
+import BusinessPerformance from "../../components/Pages/Profile/Business-Performance/BusinessPerformance"
+import CompanyOverview from "../../components/Pages/Profile/Company-Overview/CompanyOverview"
+import Sidebar from "../../components/Pages/Profile/Sidebar/Sidebar"
 
 const cx = classNames.bind(styles)
 

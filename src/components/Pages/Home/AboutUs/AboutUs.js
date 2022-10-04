@@ -2,16 +2,16 @@ import classnames from 'classnames/bind'
 import styles from './AboutUs.module.scss'
 
 
-import Card from '../../Card/Card'
+import Card from '../../../Card/Card'
 
-import aboutusImg1 from '../../../assets/img/IMG001.png'
-import aboutusImg2 from '../../../assets/img/IMG002.png'
-import aboutusImg3 from '../../../assets/img/IMG003.png'
+import aboutusImg1 from '../../../../assets/img/IMG001.png'
+import aboutusImg2 from '../../../../assets/img/IMG002.png'
+import aboutusImg3 from '../../../../assets/img/IMG003.png'
 
-import IMG001 from '../../../assets/img/IMG004.png'
-import IMG002 from '../../../assets/img/IMG005.png'
-import IMG003 from '../../../assets/img/IMG006.png'
-import IMG004 from '../../../assets/img/IMG007.png'
+import IMG001 from '../../../../assets/img/IMG004.png'
+import IMG002 from '../../../../assets/img/IMG005.png'
+import IMG003 from '../../../../assets/img/IMG006.png'
+import IMG004 from '../../../../assets/img/IMG007.png'
 
 const cx = classnames.bind(styles)
 

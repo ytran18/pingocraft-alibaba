@@ -3,10 +3,10 @@ import styles from './ProductCapacity.module.scss'
 
 import { Table, TableHeader, TableRow, TableCell, TableBody } from 'grommet'
 
-import IMG001 from '../../../assets/img/IMG016.jpeg'
-import IMG002 from '../../../assets/img/IMG017.jpeg'
-import IMG003 from '../../../assets/img/IMG018.jpeg'
-import IMG004 from '../../../assets/img/IMG019.jpeg'
+import IMG001 from '../../../../assets/img/IMG016.jpeg'
+import IMG002 from '../../../../assets/img/IMG017.jpeg'
+import IMG003 from '../../../../assets/img/IMG018.jpeg'
+import IMG004 from '../../../../assets/img/IMG019.jpeg'
 
 const cx = classnames.bind(styles)
 

@@ -1,6 +1,6 @@
 .container
 {
-    background-image: url('../../../assets/img/background2.jpg') ;
+    background-image: url('../../../../assets/img/background2.jpg') ;
     background-size: cover;
     width: 100%;
     display: flex;
@@ -17,13 +17,11 @@
 .aboutus-leftside 
 {
     width: 5%;
-    // border: 1px solid #333;
 }
 
 .aboutus-center
 {
     width: 35%;
-    // border: 1px solid #333;
     color: #fff;
     padding-top: 2rem;
 }
@@ -31,7 +29,6 @@
 .aboutus-rightside
 {
     width: 60%;
-    // border: 1px solid #333;
 }
 
 .aboutusImg1
