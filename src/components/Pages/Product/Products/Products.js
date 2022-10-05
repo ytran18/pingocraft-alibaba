@@ -1,7 +1,7 @@
 import classnames from 'classnames/bind'
 import styles from './Products.module.scss'
 import axios from 'axios'
-import { Pagination, Box, Text } from 'grommet'
+import { Pagination, Box} from 'grommet'
 
 import SingleProduct from '../../../Single-Product/SingleProduct'
 import { useEffect, useState } from 'react'
@@ -11,7 +11,8 @@ const cx = classnames.bind(styles)
 function Products ()
 {
 
-    const [products, setProducts] = useState([])
+    const [products, setProducts] = useState([]);
+
 
     useEffect(() =>
     {
@@ -23,17 +24,19 @@ function Products ()
         fetchproducts();
     },[])
 
-
     const [currentData, setCurrentData] = useState(products.slice(0,16));
-    const [indices, setIndices] = useState([0,16]);
+
+    useEffect(() =>
+    {
+        const nextData = products.slice(0, 16);
+        setCurrentData(nextData); 
+    },[products])
 
     const handleChange = ({ startIndex, endIndex }) =>
     {
         const nextData = products.slice(startIndex, endIndex);
         setCurrentData(nextData);
-        setIndices([startIndex, Math.min(endIndex, products.length)]);
     }
-    console.log(indices);
 
     return (
         <div className={cx('container')}>
@@ -42,16 +45,13 @@ function Products ()
                     currentData.map((product,index) =>
                     {
                         return (
-                                <SingleProduct picture={product.image} title={product.title}  price={product.price} minOrder={product.minOrder} key={index} />
+                            <SingleProduct picture={product.image} title={product.title}  price={product.price} minOrder={product.minOrder} key={index} />
                         )
                     })
                 }
             </div>
             <Box>
-                <Text>
-                    Showing {indices[0] + 1} - {indices[1]} of {products.length}
-                </Text>
-                <Pagination numberItems={products.length} onChange={handleChange}/>
+                <Pagination step={16} numberItems={products.length} onChange={handleChange} page={1} alignSelf="end"/>
             </Box>
         </div>
     )
