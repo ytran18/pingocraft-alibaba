@@ -1,0 +1,118 @@
+.product-title
+{
+    font-size: 16px;
+}
+
+.price
+{
+    display: flex;
+    justify-content: space-around;
+    height: 88px;
+    font-size: 14px;
+    align-items: center;
+    border-top: 1px solid rgb(230, 231, 235);
+    border-bottom: 1px solid rgb(230, 231, 235);
+    margin: 10px 0;
+}
+
+.price h3
+{
+    font-size: 20px;
+}
+
+// 
+
+.product-color
+{
+    display: flex;
+    margin: 20px 0;
+}
+
+.product-color p 
+{
+    width: 110px;
+    font-size: 14px;
+}
+
+.product-size
+{
+    display: flex;
+    margin: 20px 0;
+}
+
+.product-size p 
+{
+    width: 110px;
+    font-size: 14px;
+}
+
+.size
+{
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:1px solid rgb(238, 238, 238);
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+// 
+
+.product-leadtime
+{
+    display: flex;
+}
+
+.leadtime-title
+{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    width: 120px;
+}
+
+.leadtime-title p
+{
+    margin-right: 10px;
+}
+
+.leadtime-table
+{
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.product-customization
+{
+    display: flex;
+    font-size: 14px;
+}
+
+// 
+
+.product-customization
+{
+    margin: 20px 0;
+}
+
+.customization-title
+{
+    width: 120px;
+}
+
+// 
+
+.product-shipping 
+{
+    display: flex;
+    font-size: 14px;
+}
+
+.product-shipping p
+{
+    width: 120px;
+}

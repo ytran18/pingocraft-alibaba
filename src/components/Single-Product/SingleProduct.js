@@ -1,28 +1,27 @@
 import classnames from 'classnames/bind'
 import styles from './SingleProduct.module.scss'
 
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { faCirclePlus } from '@fortawesome/free-solid-svg-icons'
+import { Link } from 'react-router-dom'
 
 const cx = classnames.bind(styles)
 
-function SingleProduct ({ picture, title, price, minOrder })
+function SingleProduct ({ picture, title, price, minOrder, id })
 {
     return (
         <div className={cx('container')}>
             
-            <a href='/' className={cx('image')}>
+            <Link to={`/products/${id}`} className={cx('image')}>
                 <div>
                     <img alt='img' src={picture} className={cx('single-img')}/>
                 </div>
-            </a>
+            </Link>
 
             <div className={cx('info')}>
                 
                 <div className={cx('title')}>
-                    <a href='/'>
+                    <Link to={`/products/${id}`}>
                         {title}
-                    </a>
+                    </Link>
                 </div>
 
                 <div className={cx('price')}>

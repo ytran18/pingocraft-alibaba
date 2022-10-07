@@ -1,0 +1,44 @@
+.image
+{
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+    overflow: hidden;
+}
+
+.image img
+{
+    transition: transform .5s ease;
+}
+
+.image:hover img 
+{
+    transform: scale(1.5);
+}
+
+.single-image
+{
+    width: 350px;
+    height: 350px;
+}
+
+.image-list
+{
+    display: flex;
+    justify-content: center;
+}
+
+.image-list div
+{
+    width: 50px;
+    height: 50px;
+    border: 1px solid rgb(203, 203, 203);
+    cursor: pointer;
+}
+
+.list
+{
+    width: 48px;
+    height: 48px;
+}
