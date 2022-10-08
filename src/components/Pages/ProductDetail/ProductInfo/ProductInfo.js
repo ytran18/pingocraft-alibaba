@@ -1,52 +1,46 @@
 import classnames from 'classnames/bind'
 import styles from './ProductInfo.module.scss'
 
-import { useParams } from 'react-router-dom'
-
-import axios from 'axios'
-
 import { Table, TableHeader, TableRow, TableCell, TableBody } from 'grommet'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircleInfo } from '@fortawesome/free-solid-svg-icons'
 
 import Color from '../Color-Product/Color'
-import { useEffect, useState } from 'react'
 
 const cx = classnames.bind(styles)
 
-function ProductInfo ()
+function ProductInfo ({ price, title })
 {
 
-    const {productID} = useParams()
-    const [product, setProduct] = useState([])
+    let dataPrice = []
+    let dataTitle
+    if(price)
+    {   
+        dataPrice = price
+    }
 
-    useEffect(() => 
-    {
-        const fetchproducts = async () => 
-        {
-            const { data } = await axios.get(`/api/products/${productID}`);
-            setProduct(data);
-        }; 
-        fetchproducts();
-    },[productID])
+    if(title)
+    {   
+        dataTitle = title
+    }
 
     return (
         <div className={cx('container')}>
-            <div className={cx("product-title")}>{product.title}</div>
+            <div className={cx("product-title")}>{dataTitle}</div>
 
             <div className={cx("price")}>
                 <div>
                     <p>500 - 999 pieces</p>
-                    <h3>{product.price[0]}</h3>
+                    <h3>{dataPrice[0]}</h3>
                 </div>
                 <div>
                     <p>1000 - 4999 pieces</p>
-                    <h3>{product.price[1]}</h3>
+                    <h3>{dataPrice[1]}</h3>
                 </div>
                 <div>
                     <p>{`>= 5000 pieces`}</p>
-                    <h3>{product.price[2]}</h3>
+                    <h3>{dataPrice[2]}</h3>
                 </div>
             </div>
 

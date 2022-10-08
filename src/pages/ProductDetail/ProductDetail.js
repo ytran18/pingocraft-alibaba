@@ -45,7 +45,7 @@ function ProductDetail() {
                         </div>
 
                         <div className={cx("info")}>
-                            <ProductInfo />
+                            <ProductInfo price={products.price} title={products.title}/>
                         </div>
                     </div>
                     <div className={cx("related")}>
