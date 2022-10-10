@@ -23,10 +23,10 @@ const cx = classnames.bind(styles)
 function Home() 
 {
     return (
-        <div className={cx('container')}>
+        <div className={cx('relative')}>
             
             {/* slide show */}
-            <div className={cx('slide-show')}>
+            <div className={cx('z-[2]')}>
                 <Box overflow={'hidden'}>
                     <Carousel play={5000}>
                         <Image src={slideImg1}/>
@@ -44,18 +44,18 @@ function Home()
             <div className={cx('about-us')}>
                 <AboutUs />
             </div>
-            <div className={cx('video-recommendations')}>
-                <div className={cx('video')}>
+            <div className={cx('flex justify-center mt-[2rem]')}>
+                <div className={cx('w-[720px] h-[450px]')}>
                     <video controls width={'700'} height={'400'}>
                         <source src={VID001} type="video/mp4"/>
                     </video>
                 </div>
-                <div className={cx('recommendations')}>
-                    <div className={cx('header')}>
+                <div className={cx('flex flex-col')}>
+                    <div className={cx('uppercase text-[18px]')}>
                         <h3>viet nam pingo craft company ltd.</h3>
                     </div>
-                    <div className={cx('footer')}>
-
+                    <div className={cx('w-[500px] h-[369px] border-[#dbdbdb]')}>
+                        
                     </div>
                 </div>
             </div>

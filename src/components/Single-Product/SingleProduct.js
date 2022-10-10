@@ -8,9 +8,9 @@ const cx = classnames.bind(styles)
 function SingleProduct ({ picture, title, price, minOrder, id })
 {
     return (
-        <div className={cx('container')}>
+        <div className={cx('container','rounded-[7px] p-[7px] shadow-[0_2px_8px_rgba(0,0,0,.1)] w-[234px] h-[386px] mr-[8px] mb-[8px]')}>
             
-            <Link to={`/products/${id}`} className={cx('image')}>
+            <Link to={`/products/${id}`} className={cx('w-[220px] h-[220px]')}>
                 <div>
                     <img alt='img' src={picture} className={cx('single-img')}/>
                 </div>

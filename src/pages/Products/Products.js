@@ -10,21 +10,21 @@ const cx = classNames.bind(styles)
 
 function Products() {
     return (
-        <div className={cx('container')}>
-            <div className={cx('header')}>
+        <div className={cx('relative')}>
+            <div>
                 <Header /> 
             </div>
 
-            <div className={cx('products')}>
-                <div className={cx('sidebar')}>
+            <div className={cx('flex py-[2rem] px-[2rem]')}>
+                <div>
                     <Sidebar />
                 </div>
-                <div className={cx('main-content')}>
+                <div>
                     <AllProducts />
                 </div>
             </div>
 
-            <div className={cx('footer')}>
+            <div>
                 <Footer />
             </div>
         </div>
