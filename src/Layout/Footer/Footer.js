@@ -16,11 +16,11 @@ function Footer ()
                 </div>
                 <div className={cx('center')}>
                     <h5>Company</h5>
-                    <p>About us</p>
-                    <p>Customize</p>
-                    <p>Wholesale pop up cards</p>
-                    <p>Ebooks</p>
-                    <p>Contact Us</p>
+                    <p><a href="/" className={cx('no-underline text-[#333]')}>Home</a></p>
+                    <p><a href="/products" className={cx('no-underline text-[#333]')}>Products</a></p>
+                    <p><a href="/profile" className={cx('no-underline text-[#333]')}>Profile</a></p>
+                    <p><a href="/contact" className={cx('no-underline text-[#333]')}>Contact</a></p>
+                    <p><a href="/feed" className={cx('no-underline text-[#333]')}>Feed</a></p>
                 </div>
                 <div className={cx('right')}>
                     <h5>Contact Us</h5>

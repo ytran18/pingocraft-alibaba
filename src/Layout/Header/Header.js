@@ -34,7 +34,7 @@ function Header ()
                     <Container className={cx('bg-[#f9e5e7] lg:max-h-11')}>
                         <Navbar.Brand>
                             <Link to={"/"} onClick={() => setMenuItems('Home')} className={cx('lg:inline-block lg:text-[15px] lg:py-0 lg:px-[15px] text-white font-bold lg:hover:text-[#5151c7] no-underline')}>
-                                {menuItems}
+                                Home
                             </Link>
                         </Navbar.Brand>
 
