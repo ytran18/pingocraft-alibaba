@@ -36,7 +36,7 @@ function ProductDetail() {
                 <Header />
             </div>
 
-            <div className={cx("container")}>
+            <div className={cx("relative")}>
                 <div className={cx("breadcrumb")}>this is breadcrumb</div>
                 <div className={cx("product-details")}>
                     <div className={cx("product")}>

@@ -8,7 +8,7 @@ const cx = classNames.bind(styles)
 
 function Contact() {
     return (
-        <div className={cx('containner')}>
+        <div className={cx('relative')}>
             <div className={cx('header')}>
                 <Header />
             </div>

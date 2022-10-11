@@ -39,7 +39,7 @@ function Related ()
                     currentData.map((product, index) =>
                     {
                         return (
-                            <SingleProduct picture={product.image} title={product.title} price={product.price} minOrder={product.minOrder} key={index}/>
+                            <SingleProduct picture={product.image} title={product.title} price={product.price} minOrder={product.minOrder} id={product._id} key={index}/>
                         )
                     })
                 }

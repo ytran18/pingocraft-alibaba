@@ -8,7 +8,7 @@ const cx = classNames.bind(styles)
 
 function Viewmore() {
     return (
-        <div className={cx('container')}>
+        <div className={cx('relative')}>
             <div className={cx('header')}>
                 <Header />
             </div>

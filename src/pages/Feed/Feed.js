@@ -6,10 +6,9 @@ import Footer from '../../Layout/Footer/Footer'
 
 const cx = classNames.bind(styles)
 
-
 function Feed() {
     return (
-        <div className={cx('container')}>
+        <div className={cx('relative')}>
             <div className={cx('header')}>
                 <Header />
             </div>

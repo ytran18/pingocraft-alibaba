@@ -4,6 +4,8 @@ import styles from './Sidebar.module.scss'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faShop, faAngleDown, faAngleUp} from '@fortawesome/free-solid-svg-icons'
 
+import SidebarProductCall from '../../../Sidebar-Product/SidebarProductCall'
+
 const cx = classnames.bind(styles)
 
 function Sidebar()
@@ -38,8 +40,8 @@ function Sidebar()
             </div>
 
             <div className={cx('sidebar-products','lg:w-[220px] lg:h-[452px] lg:mt-[2rem] lg:rounded-[10px]')}>
-                <div className={cx('products-toppick','lg:w-[100%] lg:h-[416px]')}>
-
+                <div className={cx('products-toppick','lg:w-[100%] lg:h-[416px] p-[8px]')}>
+                    <SidebarProductCall />
                 </div>
                 <div className={cx('lg:w-[100% lg:h-[36px]] lg:flex')}>
                     <div className={cx('lg:left','lg:w-[50%] lg:flex lg:justify-center lg:items-center lg:cursor-pointer')}>
