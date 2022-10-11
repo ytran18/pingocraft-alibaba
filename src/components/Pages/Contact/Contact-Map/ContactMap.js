@@ -5,7 +5,12 @@ const cx = classnames.bind(styles);
 
 function ContactMap() {
     return (
-        <div className={cx("flex justify-center items-center")}>
+        <div className={cx("flex flex-col justify-center items-center mt-[3rem]")}>
+
+            <h1 className={cx('text-[25px] tracking-widest')}>WE ARE HERE</h1>
+
+            <span>----</span>
+
             <iframe
                 title="pingocraft"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d979.5226476651086!2d106.6708938563342!3d10.880714177653669!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d707adfca6b5%3A0x9c8289335a38af94!2sPingo%20Craft%20Vi%E1%BB%87t%20Nam!5e0!3m2!1svi!2s!4v1665479888702!5m2!1svi!2s"
@@ -14,7 +19,7 @@ function ContactMap() {
                 allowfullscreen=""
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"
-                className={cx('my-[3rem]')}
+                className={cx('mb-[3rem]')}
             ></iframe>
         </div>
     );

@@ -8,6 +8,11 @@ import Footer from "../../Layout/Footer/Footer";
 
 import { useParams } from 'react-router-dom'
 
+import Breadcrumbs  from '@mui/material/Breadcrumbs'
+import Typography from '@mui/material/Typography';
+import Link from '@mui/material/Link';
+import Stack from '@mui/material/Stack';
+
 import SingleProductImage from "../../components/Pages/ProductDetail/SingleProductImage/SingleProductImage";
 import ProductInfo from "../../components/Pages/ProductDetail/ProductInfo/ProductInfo";
 import Related from "../../components/Pages/ProductDetail/Related/Related";
@@ -29,6 +34,27 @@ function ProductDetail() {
         }; 
         fetchproducts();
     },[productID])
+
+    const handleClick = () =>
+    {
+
+    }
+
+    // breadcrumb
+
+    const breadcrumbs = [
+        <Link underline="hover" key={"1"} color="inherit" href="/" onClick={handleClick}>
+            Home
+        </Link>,
+
+        <Link underline="hover" key={"2"} color="inherit" href="/products" onClick={handleClick}>
+            Products
+        </Link>,
+
+        <Typography key={"3"} color="text.primary">
+            {products.title || null}
+        </Typography>,
+    ]
     
     return (
         <div className={cx("wrapper")}>
@@ -37,7 +63,13 @@ function ProductDetail() {
             </div>
 
             <div className={cx("relative")}>
-                <div className={cx("breadcrumb")}>this is breadcrumb</div>
+                <div className={cx("breadcrumb","mt-[1rem] ml-[1rem]")}>
+                    <Stack spacing={2}>
+                        <Breadcrumbs separator=">" aria-label="breadcrumb">
+                            {breadcrumbs}
+                        </Breadcrumbs>
+                    </Stack>
+                </div>
                 <div className={cx("product-details")}>
                     <div className={cx("product")}>
                         <div className={cx("image")}>
