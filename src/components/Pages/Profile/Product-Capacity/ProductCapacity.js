@@ -13,14 +13,14 @@ const cx = classnames.bind(styles)
 function ProductCapacity()
 {
     return (
-        <div className={cx('container')}>
+        <div className={cx('container','lg:w-[960px] w-100%[]')}>
             <div className={cx('header')}>
                 <p>product capacity</p>
             </div>
             <div className={cx('content')}>
                 <div className={cx('production-flow')}>
                     <h6>Production Flow</h6>
-                    <div className={cx('image')}>
+                    <div className={cx('image','lg:flex')}>
                         <div>
                             <img alt='img' src={IMG001} className={cx('picture')}/>
                             <h6>Laser Cutting Details</h6>
@@ -91,7 +91,7 @@ function ProductCapacity()
                         </Table>
                     </div>
                 </div>
-                <div className={cx('factory-information')}>
+                <div className={cx('factory-information','hidden lg:block')}>
                     <h6>Factory Information</h6>
                     <div className={cx('table')}>
                         <Table>

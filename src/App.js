@@ -21,6 +21,7 @@ function App() {
                             Layout = Fragment
                         }
                         const Page = route.component;
+
                         return (
                             <Route
                                 key={index}

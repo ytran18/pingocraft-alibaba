@@ -14,7 +14,7 @@ function Sidebar()
         <div className={cx('hidden lg:flex lg:flex-col lg:w-[20%]')}>
 
             <div className={cx('lg:w-[220px] lg:h-[53px] lg:flex lg:items-center lg:justify-center lg:bg-[#e9eff5] lg:rounded-[10px] lg:border-solid lg:border-[#e3e9f2]')}>
-                <FontAwesomeIcon icon={faShop}  className={cx('lg:w-[20px] lg:h-[20px]')}/>
+                <FontAwesomeIcon icon={faShop} className={cx('lg:w-[20px] lg:h-[20px]')}/>
                 <div className={cx('lg:ml-[0.75rem] lg:text-[17px]')}>Top picks</div>
             </div>
 

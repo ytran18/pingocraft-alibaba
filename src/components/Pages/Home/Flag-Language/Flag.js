@@ -1,7 +1,6 @@
 import classnames from 'classnames/bind'
 import styles from './Flag.module.scss'
 
-import i18n from '../../../../i18n'
 
 import Germany from '../../../../assets/flag/germany.png'
 import Portugal from '../../../../assets/flag/portugal.png'
@@ -25,11 +24,6 @@ const cx = classnames.bind(styles)
 
 function Flag ()
 {
-
-    const changeLanguage = (lng) =>
-    {
-        i18n.changeLanguage(lng)
-    }
 
     return (
         <div className={cx('container')}>
@@ -63,7 +57,7 @@ function Flag ()
                     <p>Español</p>
                 </div>
                 
-                <div className={cx('flag-language')} onClick={() => changeLanguage('vn')}>
+                <div className={cx('flag-language')}>
                     <img alt='vietnam' src={Vietnam} className={cx('flag')}/>
                     <p>Tiếng Việt</p>
                 </div>

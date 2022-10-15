@@ -3,9 +3,6 @@ import styles from './ProductInfo.module.scss'
 
 import { Table, TableHeader, TableRow, TableCell, TableBody } from 'grommet'
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCircleInfo } from '@fortawesome/free-solid-svg-icons'
-
 import Color from '../Color-Product/Color'
 
 const cx = classnames.bind(styles)
@@ -27,7 +24,7 @@ function ProductInfo ({ price, title })
 
     return (
         <div className={cx('container')}>
-            <div className={cx("product-title")}>{dataTitle}</div>
+            <div className={cx("product-title",'')}>{dataTitle}</div>
 
             <div className={cx("price")}>
                 <div>
@@ -60,7 +57,6 @@ function ProductInfo ({ price, title })
                 <div className={cx("product-leadtime")}>
                     <div className={cx('leadtime-title')}>
                         <p>Lead time:</p>
-                        <FontAwesomeIcon icon={faCircleInfo} />
                     </div>
                     <div className={cx('leadtime-table')}>
                         <Table>

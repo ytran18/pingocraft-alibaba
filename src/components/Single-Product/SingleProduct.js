@@ -7,18 +7,18 @@ function SingleProduct ({ picture, title, price, minOrder, id })
 {
 
     return (
-        <div className={cx('container','rounded-[7px] p-[7px] shadow-[0_2px_8px_rgba(0,0,0,.1)] w-[234px] h-[386px] mr-[8px] mb-[8px]')}>
+        <div className={cx('container','rounded-[7px] p-[7px] shadow-[0_2px_8px_rgba(0,0,0,.1)] md:w-[234px] md:h-[386px] mr-[8px] mb-[8px]')}>
             
-            <a href={`/products/${id}`} target="_blank" rel="noopener noreferrer" className={cx('w-[220px] h-[220px]')}>
+            <a href={`/products/${id}`} className={cx('md:w-[220px] md:h-[220px]')}>
                 <div>
-                    <img alt='img' src={picture} className={cx('single-img')}/>
+                    <img alt='img' src={picture} className={cx('md:w-[220px] md:h-[220px] w-[318px]')}/>
                 </div>
             </a>
 
             <div className={cx('info')}>
                 
                 <div className={cx('title')}>
-                    <a href={`/products/${id}`} target="_blank" rel="noopener noreferrer">
+                    <a href={`/products/${id}`}>
                         {title}
                     </a>
                 </div>

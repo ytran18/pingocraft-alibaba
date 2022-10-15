@@ -57,26 +57,27 @@ function ProductDetail() {
     ]
     
     return (
-        <div className={cx("wrapper")}>
+        <div className={cx("relative")}>
+
             <div className={cx("header")}>
                 <Header />
             </div>
 
-            <div className={cx("relative")}>
-                <div className={cx("breadcrumb","mt-[1rem] ml-[1rem]")}>
+            <div className={cx("")}>
+                <div className={cx("hidden lg:block mt-[1rem] ml-[1rem]")}>
                     <Stack spacing={2}>
                         <Breadcrumbs separator=">" aria-label="breadcrumb">
                             {breadcrumbs}
                         </Breadcrumbs>
                     </Stack>
                 </div>
-                <div className={cx("product-details")}>
-                    <div className={cx("product")}>
-                        <div className={cx("image")}>
+                <div className={cx("product-details",'mt-[1rem]')}>
+                    <div className={cx("lg:flex")}>
+                        <div className={cx("lg:w-[40%]")}>
                             <SingleProductImage imageList={products.imageList}/>
                         </div>
 
-                        <div className={cx("info")}>
+                        <div className={cx("lg:w-[60%]")}>
                             <ProductInfo price={products.price} title={products.title}/>
                         </div>
                     </div>

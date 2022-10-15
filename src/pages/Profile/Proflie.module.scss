@@ -11,18 +11,11 @@
     width: 20%;
 }
 
-// 
-
-.content
-{
-    width: 80%;
-}
 
 // 
 
 .top
 {
-    width: 960px;
     height: 70px;
     background: rgb(255, 255, 255);
     font-size: 15px;
@@ -44,7 +37,6 @@
 .company-overview
 {
     background: rgb(255, 255, 255);
-    width: 960px;
     margin-top: 2rem;
     border-radius: 10px;
     padding: 1rem;
@@ -67,3 +59,14 @@
     margin: 2rem 0;
 }
 
+
+@media screen and (max-width: 768px) {
+    .header
+    {
+        position: sticky;
+        position: -webkit-sticky;
+        align-self: flex-end;
+        top: 0;
+        background: #fff;
+    }
+}

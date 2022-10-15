@@ -13,14 +13,13 @@ function Products ()
 
     const [products, setProducts] = useState([]);
 
-
     useEffect(() =>
     {
         const fetchproducts = async () => 
         {
             const { data } = await axios.get("/api/products");
             setProducts(data);
-        }; 
+        };
         fetchproducts();
     },[])
 
@@ -38,8 +37,10 @@ function Products ()
         setCurrentData(nextData);
     }
 
+
     return (
-        <div className={cx('container')}>
+        <div className={cx('lg:ml-[16px] m-auto')}>
+            <h1 className={cx('lg:hidden mb-4 text-center')}>All Products</h1>
             <div className={cx('products')}>
                 {
                     currentData.map((product,index) =>
@@ -51,7 +52,7 @@ function Products ()
                 }
             </div>
             <Box>
-                <Pagination step={16} numberItems={products.length} onChange={handleChange} page={1} alignSelf="end"/>
+                <Pagination step={16} numberItems={products.length} onChange={handleChange} page={1} alignSelf="center"/>
             </Box>
         </div>
     )

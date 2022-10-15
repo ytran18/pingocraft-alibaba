@@ -1,21 +1,10 @@
-
-
-.product
-{
-    display: flex;
-}
-
-.breadcrumb
-{
-    height: 56px;
-}
-
-.image
-{
-    width: 40%;
-}
-
-.info
-{
-    width: 60%;
+@media screen and (max-width: 768px) {
+    .header
+    {
+        position: sticky;
+        position: -webkit-sticky;
+        align-self: flex-end;
+        top: 0;
+        background: #fff;
+    }
 }

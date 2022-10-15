@@ -11,17 +11,20 @@ const cx = classNames.bind(styles)
 function Products() {
     return (
         <div className={cx('relative')}>
-            <div>
+            <div className={cx('header')}>
                 <Header /> 
             </div>
 
-            <div className={cx('flex py-[2rem] px-[2rem]')}>
-                <div>
+            <div className={cx('flex py-[2rem] lg:px-[2rem]')}>
+
+                <div className={cx('hidden lg:block lg:w-[20%]')}>
                     <Sidebar />
                 </div>
-                <div>
+
+                <div className={cx('flex justify-center items-center lg:w-[80%]')}>
                     <AllProducts />
                 </div>
+                
             </div>
 
             <div>

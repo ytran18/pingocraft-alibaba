@@ -1,12 +1,10 @@
-.container
-{
-    margin-left: 16px;
 
-}
 
 .products
 {
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
     overflow: hidden;
 }

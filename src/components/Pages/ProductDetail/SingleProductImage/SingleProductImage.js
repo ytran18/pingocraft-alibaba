@@ -15,11 +15,11 @@ function SingleProductImage ({ imageList })
     }
 
     const [picture, setPicture] = useState(list[0])
-    
+
     return (
-        <div className={cx('container')}>
-            <div className={cx('image')}>
-                <img alt='img' src={picture || list[0]} className={cx('single-image')}/>
+        <div className={cx('flex flex-col justify-center items-center')}>
+            <div className={cx('flex justify-center items-center my-[40px] relative overflow-hidden','single-img')}>
+                <img alt='img' src={picture || list[0]} className={cx('lg:w-[350px] lg:h-[350px]','picture')}/>
             </div>
             <div className={cx('image-list')}>
                 {
