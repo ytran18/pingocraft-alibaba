@@ -13,7 +13,7 @@ const cx = classnames.bind(styles)
 function ProductCapacity()
 {
     return (
-        <div className={cx('container','lg:w-[960px] w-100%[]')}>
+        <div className={cx('container','lg:w-[960px] w-[100%]')}>
             <div className={cx('header')}>
                 <p>product capacity</p>
             </div>

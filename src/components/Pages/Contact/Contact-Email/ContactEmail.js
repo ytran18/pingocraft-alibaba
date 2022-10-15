@@ -6,7 +6,7 @@ const cx = classnames.bind(styles)
 function ContactEmail()
 {
     return (
-        <div className={cx('mt-[2rem] border-[1px] lg:mx-[3rem] w-[100%]')}>
+        <div className={cx('mt-[2rem] border-[1px] lg:mx-[3rem]')}>
             <div className={cx(' flex text-[16px] py-[2rem] w-[100%]')}>
 
                 <div className={cx('w-[40%] flex flex-col')}> 
