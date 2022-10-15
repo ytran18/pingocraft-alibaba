@@ -18,7 +18,7 @@ function SidebarProductCall ()
     {
         const fetchproducts = async () => 
         {
-            const { data } = await axios.get("/api/products");
+            const { data } = await axios.get("https://pinigocraft.herokuapp.com/api/products");
             setProducts(data);
         }; 
         fetchproducts();
