@@ -16,7 +16,7 @@ function Products ()
     {
         const fetchproducts = async () => 
         {
-            const { data } = await axios.get("hhttps://pingocraft.onrender.com/api/products");
+            const { data } = await axios.get("https://pingocraft.onrender.com/api/products");
             setProducts(data);
         };
         fetchproducts();
