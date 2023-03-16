@@ -29,7 +29,7 @@ function ProductDetail() {
     {
         const fetchproducts = async () => 
         {
-            const { data } = await axios.get(`https://pingocraft.herokuapp.com/api/products/${productID}`);
+            const { data } = await axios.get(`https://pingocraft.onrender.com/api/products/${productID}`);
             setProducts(data);
         }; 
         fetchproducts();

@@ -10,14 +10,13 @@ const cx = classnames.bind(styles)
 
 function Products ()
 {
-
     const [products, setProducts] = useState([]);
 
     useEffect(() =>
     {
         const fetchproducts = async () => 
         {
-            const { data } = await axios.get("https://pingocraft.herokuapp.com/api/products");
+            const { data } = await axios.get("hhttps://pingocraft.onrender.com/api/products");
             setProducts(data);
         };
         fetchproducts();
@@ -36,7 +35,6 @@ function Products ()
         const nextData = products.slice(startIndex, endIndex);
         setCurrentData(nextData);
     }
-
 
     return (
         <div className={cx('lg:ml-[16px] m-auto')}>
